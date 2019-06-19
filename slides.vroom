@@ -1,0 +1,168 @@
+---- config
+title: Time to Rename Perl
+indent: 5
+auto_size: 1
+vim_opts: '-u NONE'
+skip: 0
+vimrc: |
+  unmap AA
+  unmap QQ
+  set nohlsearch
+  au BufRead * syn match vroom_command "\v^\s*\$.*$"
+  hi vroom_command  term=bold,italic,underline ctermfg=Yellow
+
+  map j /^\s\+\$<cr>
+  map ' :set bg=light<cr>
+  map k ?^\s\+\$<cr>
+  map r :exec '!clear;printf "=\%.0s" {1..80};echo;' . substitute(getline('.'), '^\s\+\$\s\+', '', '')<cr>
+  map m r
+  map <ENTER> r
+  map s :e #<cr>
+  map q ;
+  map qq :q!<cr>
+
+  map 1 :wincmd o<cr>
+  map 2 :wincmd v<cr>
+  map \1 :w<cr>
+
+---- center
+Time to Rename Perl
+
+The Perl Conference
+Pittsburgh
+
+June 19, 2019
+
+----
+== An Idea
+
+* I want to share an idea I have for Perl
+
++* Humor level 0 (scale of 1-5)
+* This is Ingy being completely serious
+* This idea may cause some consternation
+* I hope it causes deep thought and conversation
+* I believe it can solve a serious problem
+* Maybe our *most* serious problem
+
+----
+== First some background
+
+* I've been a Perl programmer since 1998
+* I've been a Perl 5 programmer since 1998
+* I've been a Perl 6 programmer since 2000
+* I still publish code in those and many others
+
+* I don't consider myself a Perl 5 or Perl 6 programmer
+* I do consider Perl to be my community
+
+* I have spoken to, lived and partied with mongers worldwide
+* For over 20 years
+* Perl people are my people
+
+----
+== IRC(.freenode.net) #perl6
+
+* Why is #perl6 on freenode? (not irc.perl.org)
+
++* I just happened to start it there
+* I felt it was a chance to join Perl to a larger world
+* I think it has served the Perl 6 language well
+
+----
+== Perl-spective
+
+* This is not to brag
+  * I'm 1 person in the Great Sea of Perl
+* I am not active in the guts of Perl 5 or Perl 6
+* But I've been watching Perl for a long time
+* I feel I have a wholistic Perl Perspective
+
+----
+== Perl has a naming problem
+
+* Is "Perl" 5 or 6?
+* Is "Perl" a compliment or a criticism?
+* Is Perl 6 "Perl"?
+* Are Perl 6 people part of the Perl community?
+* Should Perl 6 have a different name?
+  * Entirely or a pseudonym?
+* When I say "Perl", what language am I talking about?
+
+----
+== Real World People and Opinions
+
+* Larry
+* Zoffix
+* Perl Toolchain Summit (PTS) 2019
+  * Liz
+  * Ricardo
+* KIMOTO
+  * http://blogs.perl.org/users/yuki_kimoto/2019/03/idea-of-raku.html
+
+----
+== I am not Larry, but...
+
+* "Perl" is the name of our Community
+* "Perl" is the name of a Language Family
+* "Perl" is a Spirit of programming languages
+* "Perl 5" is a programming language
+* "Perl 6" is a programming language
+* "Perl 5" and "Perl 6" are "Perl"
+* The word "Perl" means Community, Family, Spirit, 5 and 6
+
+----
+== It's Time to Rename Perl
+
+* Let's Make This Real
+
++* Let's literally rename "Perl" to "Perl 5"
+
++* We already do this naturally here at TPC
+* Let's do it publicly and the world will follow
+
++* Let's change all the perldoc mentions of "Perl" to "Perl 5"
+* Let's say "Perl 5" when we mean the language
+  * All the books
+  * All the blogs
+  * All the docs
+  * All the talks
+
++* When we say "Perl" we mean the Unity
+
+----
+== We've already started the process!
+
+$ perldoc perl
+
++* 5.10 - Practical Extraction and Report Language
+* 5.12 - The Perl language interpreter
+* 5.14 - The Perl 5 language interpreter
+  * 095a5c3e83e (David Golden 2010-12-06 3) perl - The Perl 5 language interpreter
+
++* Finishing this is a Pull Request away!
+
+----
+== Yes *We* Can
+
+* The Unity/Community is our most valuable asset
+* If we call the language "Perl 5" it all works out...
+
++* We have a great Community!
+* We have 2 great Languages!
+
+----
+== I <3 Perl
+
++== This means I love the Perl Community
+
++== This means I love all of You
+
+
+
+
+
++== THE END
+
+----
+== https://github.com/ingydotnet/renaming-perl-talk
