@@ -119,7 +119,8 @@ June 19, 2019
 +* Let's literally rename "Perl" to "Perl 5"
 
 +* We already do this naturally here at TPC
-* Let's do it publicly and the world will follow
+
++* Let's do it publicly and the world will follow
 
 +* Let's change all the perldoc mentions of "Perl" to "Perl 5"
 * Let's say "Perl 5" when we mean the language
